@@ -1,6 +1,14 @@
+# Entornos virtuales
 .venv/
+venv/
+env/
+
+# Python cache
 __pycache__/
-.ipynb_checkpoints/
-data/processed/
-.vscode/
 *.pyc
+.ipynb_checkpoints/
+.vscode/
+
+# Datos e imágenes generadas (No se commitean, se generan con el código)
+data/processed/
+reports/figures/

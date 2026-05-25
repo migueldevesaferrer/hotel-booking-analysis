@@ -13,14 +13,15 @@ def assert_columns(df, required):
 
 
 def save_plot(fig, filename: str):
-
-    output_dir = Path("reports/figures")
+    """Guarda un objeto figura de matplotlib en la ruta de reportes del proyecto."""
+    # Definimos la ruta de salida apuntando a la raíz del proyecto
+    root = Path(__file__).resolve().parent.parent
+    output_dir = root / "reports" / "figures"
 
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    fig.savefig(output_dir / filename, bbox_inches="tight")
-
-    print(f"Saved plot: {filename}")
+    fig.savefig(output_dir / filename, bbox_inches="tight", dpi=150)
+    print(f"    -> Gráfico exportado: reports/figures/{filename}")
 
 
 def set_plot_style():
