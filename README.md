@@ -47,7 +47,7 @@ project/
 ├── notebooks/
 │   └── eda.ipynb           # Importa tus funciones de src/ para hacer la narrativa
 ├── reports/
-│   └── figures/            # Creado automáticamente por tu main.py (salida visual)
+│   └── figures/            # Creado automáticamente por main.py (salida visual)
 │       ├── cancellation_distribution.png
 │       ├── cancellations_by_hotel.png
 │       └── correlation_matrix.png
